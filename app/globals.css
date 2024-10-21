@@ -2,26 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  @font-face {
+    font-family: 'Cheeseburga';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/Cheeseburger-G3Bg.ttf') format('truetype');
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer utilities{
+  .flex-center{
+    @apply flex justify-center items-center;
+  }
+  .stroke-text {
+    -webkit-text-stroke: 2px black;
+  }
+  .gradient-gold{
+    @apply bg-clip-text text-transparent bg-gradient-to-b from-[#FFF280] to-[#FFA800];
+  }
+  .gradient-radial{
+    @apply bg-gradient-to-t from-[#FFF280] to-[#FFC700];
   }
 }
+
