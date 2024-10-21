@@ -3,11 +3,10 @@ import line from '../Assets/Line 3.svg';
 import Image from 'next/image';
 import jumpingDog from '../Assets/DALL·E 2024-07-14 16.40.05 - A 3D cartoon illustration of a furry Central Asian Shepherd dog jumping happily in the air. The dog should have a joyful expression with a wide smile, 2.png';
 import blurDog from '../Assets/DALL·E 2024-07-14 16.40.05 - A 3D cartoon illustration of a furry Central Asian Shepherd dog jumping happily in the air. The dog should have a joyful expression with a wide smile, 1.png';
-
-import rectangle from '../Assets/Rectangle 7.svg'
 import union from '../Assets/Union.svg'
 import Vision from './Vision';
-import Token from './Token';
+
+
 const HistoryPage = ({ isVisible }: { isVisible: boolean }) => {
   return (
     <div
